@@ -1,0 +1,167 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: .625rem;
+
+  /* colors */
+  --primary: teal;
+  --white: #fdfdfd;
+  --black: #030303;
+
+  /* padding/margin */
+  --small: 1.5rem;
+  --large: 2.5rem;
+}
+
+body {
+  font-size: 1.4rem;
+  color: var(--primary);
+  font-family: monospace;
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: var(--small);
+}
+
+header ul {
+  list-style-type: none;
+}
+
+main {
+  width: 100vw;
+  display: block;
+  padding: var(--small);
+}
+
+main img {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  margin-top: var(--small);
+}
+
+.author {
+  font-style: italic;
+}
+
+footer {
+  background-color: var(--black);
+}
+
+form {
+  margin: var(--small);
+  padding: var(--small);
+}
+
+form fieldset {
+  border: none;
+}
+
+form input:not(.submit) {
+  width: 100%;
+}
+
+form .submit {
+  color: var(--white);
+  background-color: var(--black);
+  margin: var(--small);
+  font-size: 1rem;
+  border: none;
+}
+
+form label {
+  position: relative;
+  display: block;
+  margin-top: var(--small);
+}
+
+aside {
+  width: 20%;
+  text-align: right;
+  position: absolute;
+  right: 10%;
+  top: 10rem;
+}
+
+aside ul {
+  list-style-type: none;
+  margin-top: var(--small);
+  /* text-align: right; */
+}
+
+aside a {
+  color: var(--black);
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  body {
+    font-size: 1.8rem;
+  }
+  
+  header {
+    text-align: right;
+  }
+
+  header li {
+    display: inline;
+    padding-right: var(--large);
+  }
+
+  main {
+    margin-left: 10%;
+    width: 60%;
+  }
+
+  .main_header {
+    margin-bottom: .5rem;
+  }
+
+  article {
+    margin-top: var(--large);
+  }
+
+  form h4, fieldset label {
+    text-align: center;
+  }
+
+  form input:not(.submit) {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  form label {
+    margin-bottom: .5rem;
+  }
+
+  form .submit {
+    font-size: 1.4rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
